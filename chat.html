@@ -1,0 +1,21 @@
+<html>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D9r00000BsGj0',
+				'OACP_Messaging_for_Web_AUS',
+				'https://asahi-oc--devoacp.sandbox.my.site.com/ESWOACPMessagingforWeb1779347065562',
+				{
+					scrt2URL: 'https://asahi-oc--devoacp.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://asahi-oc--devoacp.sandbox.my.site.com/ESWOACPMessagingforWeb1779347065562/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</html>
